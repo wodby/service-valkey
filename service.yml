@@ -6,10 +6,6 @@ hostname: valkey
 containers:
 - name: valkey
   image: bitnami/valkey
-  ports:
-  - name: valkey
-    number: 6379
-    type: tcp
   env:
   - name: DISABLE_WELCOME_MESSAGE
     value: 'true'    

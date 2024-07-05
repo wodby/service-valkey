@@ -2,7 +2,7 @@ name: valkey
 icon: valkey
 type: datastore
 title: Valkey
-hostname: valkey
+hostname: valkey-master
 containers:
 - name: valkey
   image: bitnami/valkey

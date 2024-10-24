@@ -1,1 +1,1 @@
-# service-valkey
+# Valkey service for Wodby 2.0

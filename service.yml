@@ -16,7 +16,7 @@ endpoints:
   ports:
   - name: valkey
     number: 6379
-    type: tcp
+    protocol: tcp
 labels:
 - valkey
 

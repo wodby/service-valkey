@@ -50,7 +50,7 @@ helm:
   chart: oci://registry-1.docker.io/wodby/valkey
   version: 0.1.0
   configurations:
-  - name: valkey    
+  - container: valkey    
     labels: podLabels
     annotations: podAnnotations
     env: envVars

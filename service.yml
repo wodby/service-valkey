@@ -2,7 +2,6 @@ name: valkey
 icon: valkey
 type: datastore
 title: Valkey
-hostname: valkey
 containers:
 - name: valkey
   image: wodby/valkey

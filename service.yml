@@ -48,10 +48,15 @@ helm:
   values:
   - name: auth.password
     value: '{{password}}'
+
 workloads:
 - id: main
   kind: statefulset
   primary: true
+  helm:
+    labels: podLabels
+    annotations: podAnnotations
+    volumes: extraVolumes
   containers:
   - name: valkey
     image: wodby/valkey
@@ -59,7 +64,3 @@ workloads:
       resources: resources
       env: envVars
       mounts: extraVolumeMounts
-  helm:
-    labels: podLabels
-    annotations: podAnnotations
-    volumes: extraVolumes

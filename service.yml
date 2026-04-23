@@ -2,9 +2,6 @@ name: valkey
 icon: valkey
 type: datastore
 title: Valkey
-containers:
-- name: valkey
-  image: wodby/valkey
 options:
 - version: '8.1'
   tag: '8.1'
@@ -23,9 +20,9 @@ volumes:
 - name: data
   title: Data
   optional: true
-  helm: 
+  helm:
 # @todo: remove labels if imports added
-    labels: persistence.labels  
+    labels: persistence.labels
     values:
     - name: persistence.enabled
       value: true
@@ -48,14 +45,21 @@ helm:
   source: oci://registry-1.docker.io/wodby/valkey
   chart: oci://registry-1.docker.io/wodby/valkey
   version: 0.1.0
-  configurations:
-  - container: valkey    
-    labels: podLabels
-    annotations: podAnnotations
-    env: envVars
-    resources: resources
-    volumes: extraVolumes
-    mounts: extraVolumeMounts
   values:
   - name: auth.password
     value: '{{password}}'
+workloads:
+- id: main
+  kind: statefulset
+  primary: true
+  containers:
+  - name: valkey
+    image: wodby/valkey
+    helm:
+      resources: resources
+      env: envVars
+      mounts: extraVolumeMounts
+  helm:
+    labels: podLabels
+    annotations: podAnnotations
+    volumes: extraVolumes

@@ -3,6 +3,8 @@ icon: valkey
 type: datastore
 title: Valkey
 options:
+- version: '9.0'
+  tag: '9.0'
 - version: '8.1'
   tag: '8.1'
 - version: '7.2'

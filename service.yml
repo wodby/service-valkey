@@ -4,11 +4,14 @@ type: datastore
 title: Valkey
 options:
 - version: '9.0'
-  tag: '9.0'
+  tag: '9.0-1.6.6'
+  eol: '2028-10-21T00:00:00+00:00'
 - version: '8.1'
-  tag: '8.1'
+  tag: '8.1-1.6.6'
+  eol: '2030-03-31T00:00:00+00:00'
 - version: '7.2'
-  tag: '7.2'
+  tag: '7.2-1.6.6'
+  eol: '2029-04-16T00:00:00+00:00'
 endpoints:
 - name: valkey
   ports:

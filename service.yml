@@ -51,7 +51,7 @@ helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/valkey
   chart: oci://registry-1.docker.io/wodby/valkey
-  version: 0.1.1
+  version: 0.1.2
   values:
   - name: auth.password
     value: '{{password}}'

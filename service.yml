@@ -4,13 +4,13 @@ type: datastore
 title: Valkey
 options:
 - version: '9.0'
-  tag: '9.0-1.7.2'
+  tag: 9.0-r0
   eol: '2028-10-21T00:00:00+00:00'
 - version: '8.1'
-  tag: '8.1-1.7.2'
+  tag: 8.1-r0
   eol: '2030-03-31T00:00:00+00:00'
 - version: '7.2'
-  tag: '7.2-1.7.2'
+  tag: 7.2-r0
   eol: '2029-04-16T00:00:00+00:00'
 endpoints:
 - name: valkey
@@ -56,7 +56,7 @@ helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/valkey
   chart: oci://registry-1.docker.io/wodby/valkey
-  version: 0.2.0
+  version: 0.2.1
   values:
   - name: auth.password
     value: '{{password}}'

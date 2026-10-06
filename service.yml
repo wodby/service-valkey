@@ -2,6 +2,7 @@ name: valkey
 icon: valkey
 type: datastore
 title: Valkey
+guidance: GUIDANCE.md
 options:
 - version: '9.0'
   tag: 9.0-r0

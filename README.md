@@ -33,7 +33,7 @@ configuration for Valkey.
 | --- | --- |
 | Service name | `valkey` |
 | Type | Datastore |
-| Versions | `9.0` by default; also available: `8.1`, `7.2` |
+| Versions | `9.1` by default; also available: `9.0`, `8.1`, `7.2` |
 | Workloads | `main` (StatefulSet), primary |
 | Containers | `valkey` using `wodby/valkey` |
 | Endpoints | `valkey`: TCP 6379 |

@@ -79,6 +79,8 @@ workloads:
   containers:
   - name: valkey
     image: wodby/valkey
+    resources:
+      preset: nano
     helm:
       resources: resources
       env: envVars

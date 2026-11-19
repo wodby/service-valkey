@@ -5,16 +5,16 @@ title: Valkey
 guidance: GUIDANCE.md
 options:
 - version: '9.1'
-  tag: 9.1-r3
+  tag: 9.1-r5
   eol: '2031-05-19T00:00:00+00:00'
 - version: '9.0'
-  tag: 9.0-r3
+  tag: 9.0-r5
   eol: '2028-10-21T00:00:00+00:00'
 - version: '8.1'
-  tag: 8.1-r3
+  tag: 8.1-r5
   eol: '2030-03-31T00:00:00+00:00'
 - version: '7.2'
-  tag: 7.2-r3
+  tag: 7.2-r5
   eol: '2029-04-16T00:00:00+00:00'
 endpoints:
 - name: valkey

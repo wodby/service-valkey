@@ -6,15 +6,19 @@ guidance: GUIDANCE.md
 options:
 - version: '9.1'
   tag: 9.1-r5
+  digest: sha256:57592195ec5a0b98192d0d80ab6f2d8428e94a0316cc79e262b47ed807b72b43
   eol: '2031-05-19T00:00:00+00:00'
 - version: '9.0'
   tag: 9.0-r5
+  digest: sha256:2e76c2da63636c3daf53cb8d4e05529c200630a3b55c82a881800fe1c7192808
   eol: '2028-10-21T00:00:00+00:00'
 - version: '8.1'
   tag: 8.1-r5
+  digest: sha256:b88013d0b317c40320d3ddcb44a4a2fb6f96920476a769e624e2ba48cb32597e
   eol: '2030-03-31T00:00:00+00:00'
 - version: '7.2'
   tag: 7.2-r5
+  digest: sha256:9744638684c170ce0a202833f6843e74c3e0d85f811917c4fce1c5f0428ccce7
   eol: '2029-04-16T00:00:00+00:00'
 endpoints:
 - name: valkey
